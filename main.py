@@ -2,8 +2,12 @@ import cv2
 import numpy as np
 import pytesseract
 
+
+#TODO: try remove the background by looping through colors like red blue orange.
+
+
 # Load the image
-image = cv2.imread('Unknown.png')
+image = cv2.imread('realData/3.jpg')
 
 # Convert the image to HSV color space
 hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
